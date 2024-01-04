@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Deklarasi variabel
+    int jumlah_barang;
+    double harga_barang, total_pembelian = 0.0;
+
+    // Input jumlah barang
+    cout << "Masukkan jumlah barang: ";
+    cin >> jumlah_barang;
+
+    // Loop untuk input harga dan menghitung total pembelian
+    for (int i = 1; i <= jumlah_barang; ++i) {
+        cout << "Masukkan harga barang ke-" << i << ": ";
+        cin >> harga_barang;
+
+        total_pembelian += harga_barang;
+    }
+
+    // Menampilkan total pembelian
+    cout << "Total Pembelian: Rp" << total_pembelian << endl;
+
+    return 0;
+}
